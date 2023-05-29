@@ -121,3 +121,51 @@ export const Label = styled.div`
   color: #000;
   font-weight: 600;
 `;
+
+export const FilmWrapper = styled.div``;
+
+export const Title = styled.div<{ fontSize?: string }>`
+  font-size: ${(props) => props.fontSize || "24px"};
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+`;
+
+export const FilmDirector = styled.div`
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  text-align: center;
+  margin: 1rem 0;
+`;
+
+export const FilmCrawl = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+
+  div {
+    width: 80%;
+    font-style: italic;
+    opacity: 0.6;
+  }
+`;
+
+export const CharactersList = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1.5rem 0;
+`;
+
+export const CharacterCard = styled.div<{ width?: string }>`
+  border: 1px solid #8f9493;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 0 1rem 1rem 0;
+  width: ${(props) => props.width || "180px"};
+`;
+
+export const CharacterInfo = styled.div`
+  display: flex;
+`;
