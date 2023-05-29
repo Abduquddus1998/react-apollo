@@ -85,3 +85,39 @@ export const NavigationItem = styled.li`
     color: #32374d;
   }
 `;
+
+export const FilmsContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2rem;
+`;
+
+export const FilmCard = styled.div`
+  max-width: 30%;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid #8f9493;
+  border-radius: 10px;
+  cursor: pointer;
+`;
+
+export const FilmInfo = styled.div`
+  display: flex;
+  margin-top: 0.5rem;
+
+  &:last-child {
+    opacity: 0.6;
+    font-style: italic;
+  }
+
+  p {
+    margin: 0 0 0 0.5rem;
+    display: flex;
+  }
+`;
+
+export const Label = styled.div`
+  color: #000;
+  font-weight: 600;
+`;

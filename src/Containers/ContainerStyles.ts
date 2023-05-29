@@ -6,6 +6,6 @@ export const LandingWrapper = styled.div`
 `;
 
 export const Main = styled.main`
-  padding-top: 80px;
   min-height: 100vh;
+  padding: 100px 1rem 0 1rem;
 `;
