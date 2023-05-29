@@ -21,18 +21,6 @@ export default function Film() {
     variables: { filmId: params.filmId },
   });
 
-  console.log("data", data);
-
-  // name:"Tatooine"
-  // climates:['arid']
-  // diameter:10465
-  // gravity:"1 standard"
-  // orbitalPeriod:304
-  // population:200000
-  // rotationPeriod:23
-  // surfaceWater: 1
-  // terrains:['desert']
-
   return (
     <div>
       {loading && <div>LOADING....</div>}
