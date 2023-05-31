@@ -112,7 +112,7 @@ export const FilmInfo = styled.div`
   }
 
   p {
-    margin: 0 0 0 0.5rem;
+    margin: 0;
     display: flex;
   }
 `;
@@ -120,6 +120,7 @@ export const FilmInfo = styled.div`
 export const Label = styled.div`
   color: #000;
   font-weight: 600;
+  margin-right: 0.5rem;
 `;
 
 export const FilmWrapper = styled.div``;

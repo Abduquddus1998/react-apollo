@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 
 import MainLoader from "Components/MainLoader";
 import { RootWrapper, GlobalStyles } from "./globalStyles";
+import Planet from "./Components/Planet";
 
 const Films = lazy(() => import("Components/Films"));
 const Landing = lazy(() => import("Containers/Landing"));
@@ -22,6 +23,7 @@ function App() {
             <Route path="/films" element={<Films />} />
             <Route path="/films/:filmId" element={<Film />} />
             <Route path="/planets" element={<Planets />} />
+            <Route path="/planets/:planetId" element={<Planet />} />
             <Route path="/starships" element={<Starships />} />
             <Route path="/starships/:starshipId" element={<Starship />} />
           </Route>
