@@ -164,8 +164,16 @@ export const CharacterCard = styled.div<{ width?: string }>`
   border-radius: 10px;
   margin: 0 1rem 1rem 0;
   width: ${(props) => props.width || "180px"};
+  cursor: pointer;
 `;
 
 export const CharacterInfo = styled.div`
   display: flex;
+`;
+
+export const StarShipInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5rem 0;
 `;

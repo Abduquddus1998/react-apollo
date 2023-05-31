@@ -9,6 +9,7 @@ const Landing = lazy(() => import("Containers/Landing"));
 const Starships = lazy(() => import("Components/Starships"));
 const Planets = lazy(() => import("Components/Planets"));
 const Film = lazy(() => import("Components/Film"));
+const Starship = lazy(() => import("Components/Starship"));
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="/films/:filmId" element={<Film />} />
             <Route path="/planets" element={<Planets />} />
             <Route path="/starships" element={<Starships />} />
+            <Route path="/starships/:starshipId" element={<Starship />} />
           </Route>
         </Routes>
       </RootWrapper>
